@@ -1,0 +1,24 @@
+name: rag-cmf
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - google-genai>=1.0.0
+      - markitdown[all]
+      - pypdf
+      - langextract
+      - chromadb
+      - langchain>=0.3
+      - langchain-community
+      - streamlit
+      - langchain-text-splitters
+      - ragas
+      - litellm
+      - jsonref 
+      - datasets
+      - python-dotenv
+      - pandas
+      - tiktoken
+      - pytest

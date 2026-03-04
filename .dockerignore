@@ -1,0 +1,40 @@
+# Secrets — never bake these into the image
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Version control
+.git
+.gitignore
+
+# Data (large binary files — not needed at runtime, mounted as volume)
+data/
+chroma_db/
+
+# Development & evaluation artifacts
+evaluation/
+tests/
+conftest.py
+test_rag.py
+catboost_info/
+
+# Docs & metadata
+*.md
+*.txt
+!requirements.txt
+*.sh
+*.yml
+!docker-compose.yml
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

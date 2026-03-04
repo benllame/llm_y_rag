@@ -1,0 +1,29 @@
+# Core RAG stack
+google-genai>=1.0.0
+chromadb
+langchain>=0.3
+langchain-community
+langchain-text-splitters
+
+# PDF extraction
+markitdown[all]
+pypdf
+
+# Structured extraction (optional enriched mode)
+langextract
+
+# Evaluation (RAGAS)
+ragas
+litellm
+instructor
+jsonref
+datasets
+tiktoken
+
+# App
+streamlit
+
+# Utils
+python-dotenv
+pandas
+pytest

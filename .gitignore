@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+chroma_db/
+data/raw/
+data/processed/langextract_output
+data/processed/chunks_simple
+data/processed/chunks_enriched
+.DS_Store

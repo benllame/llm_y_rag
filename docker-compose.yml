@@ -1,0 +1,29 @@
+services:
+  rag-app:
+    build: .
+    image: rag-cmf:latest
+    ports:
+      - "8501:8501"
+
+    # API key — never baked into the image
+    env_file:
+      - .env
+
+    volumes:
+      # Pre-indexed ChromaDB — read-only at runtime
+      - ./chroma_db:/app/chroma_db:ro
+
+    restart: unless-stopped
+
+    # Show Streamlit URL when container starts
+    labels:
+      - "traefik.enable=false"
+
+# To build and run:
+#   docker compose up --build
+#
+# To rebuild after code changes:
+#   docker compose up --build --force-recreate
+#
+# To run in the background:
+#   docker compose up -d
