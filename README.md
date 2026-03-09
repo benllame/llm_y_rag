@@ -3,7 +3,7 @@
 > Chatbot de análisis financiero y ASG/ESG sobre Memorias Anuales Integradas (NCG 461).
 > Dos pipelines comparables evaluados con RAGAS + LLM reranking.
 
-![Demo](docs/demo.gif)
+![Demo](docs/demo_rag.gif)
 
 ## ¿Qué hace este proyecto?
 
